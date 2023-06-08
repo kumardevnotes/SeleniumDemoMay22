@@ -4,6 +4,13 @@ public class IfElseDemo {
 
 	public static void main(String[] args) {
 		
+		int empFixedSalary = 2500;
+		int empIncentive =  300;
+		
+		int finalSalry = empFixedSalary + empIncentive;
+		
+		System.out.println(finalSalry);
+		
 		int personAge = 18;
 		
 		if(personAge >= 18) { // 18 >= 18 --> true
