@@ -1,10 +1,10 @@
 package com.controlstructures;
 
-public class SwitchBlockDemo {
+public class SwitchDemoI {
 
 	public static void main(String[] args) {
 		
-		int day = 55;
+		int day = 3;
 		
 		switch(day) {
 		case 1:
@@ -20,7 +20,7 @@ public class SwitchBlockDemo {
 			System.out.println("Its Day4 and Thursday");
 			break;
 		case 5:
-			System.out.println("Its Day5 and Friday");
+			System.out.println("Its Day5 and Frida");
 			break;
 		default:
 			System.out.println("Pass a valid number starting from 1 to 5");
