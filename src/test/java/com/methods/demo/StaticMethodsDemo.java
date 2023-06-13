@@ -1,4 +1,4 @@
-package com.staticmethods.demo;
+package com.methods.demo;
 
 //Class Naming Convention
 public class StaticMethodsDemo {
