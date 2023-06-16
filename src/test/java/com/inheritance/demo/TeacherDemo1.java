@@ -13,6 +13,7 @@ public class TeacherDemo1 extends SchoolDemo { // 2+2 --> 4
 		myObj.displaySchoolAnnualFee();
 		//Below is a private method and not available to access here
 	//System.out.println(myObj.getSchoolAnnualIncome());
+		
 	
 	}
 	

@@ -1,6 +1,8 @@
 package com.inheritance.demo;
 
 public class SchoolDemo {
+	
+	public static int Id  =  101;
 
 	
 	public void displaySchoolName() {
@@ -11,9 +13,8 @@ public class SchoolDemo {
     	System.out.println("It is 2500$ for Grade1 ");
 	}
     
-    //if you make a method as private as shown belw, it is not accessible to outside people or subclasses/inheritec classes
-    private int getSchoolAnnualIncome() {
-    	return 20000; // 20k dollars
-    }
+    public void displayAddress() {
+		System.out.println("Mr John Smith. 132, My Street, Kingston, New York 12401");
+	}
 	
 }
