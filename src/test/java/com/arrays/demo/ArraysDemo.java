@@ -27,9 +27,14 @@ public class ArraysDemo {
 		
 		System.out.println(stdIds[stdIds.length-1]); */
 		
-		for (int j = 0; j < stdIds.length; j++) { // 5 < 5
-			System.out.println(stdIds[j]);
-		} 
+		//classic forloop
+//		for (int j = 0; j < stdIds.length; j++) { // 5 < 5
+//			System.out.println(stdIds[j]);
+//		} 
+		
+		for (Integer myObj : stdIds) {
+			System.out.println(myObj);
+		}
 		
 	}
 
