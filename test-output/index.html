@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite1" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -137,28 +137,6 @@
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.testng.demo.TestNGDemo</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="launchRediffEmailI">
-                  </a> <!-- launchRediffEmailI -->
-                  <span class="method-name">launchRediffEmailI</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="launchSpeakLangI">
-                  </a> <!-- launchSpeakLangI -->
-                  <span class="method-name">launchSpeakLangI</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite1-class-passed -->
-          <div class="suite-Suite1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.testng.demo.TestNGDemo2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -178,6 +156,28 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testng.demo.TestNGDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchRediffEmailI">
+                  </a> <!-- launchRediffEmailI -->
+                  <span class="method-name">launchRediffEmailI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchSpeakLangI">
+                  </a> <!-- launchSpeakLangI -->
+                  <span class="method-name">launchSpeakLangI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
         </div> <!-- panel Suite1 -->
         <div panel-name="test-xml-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -188,7 +188,14 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Regression1&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Smoke&quot;/&gt;
+        &lt;include name=&quot;Regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.testng.demo.TestNGDemo&quot;/&gt;
       &lt;class name=&quot;com.testng.demo.TestNGDemo2&quot;/&gt;
@@ -215,6 +222,30 @@
             <span class="header-content">Groups for Suite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">launchRediffEmailII</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">launchSpeakLangII</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">launchRediffEmailI</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">launchSpeakLangI</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite1" class="panel">
@@ -233,26 +264,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'launchSpeakLangI')
-data.setCell(0, 2, 'com.testng.demo.TestNGDemo')
-data.setCell(0, 3, 7982);
+data.setCell(0, 1, 'launchSpeakLangII')
+data.setCell(0, 2, 'com.testng.demo.TestNGDemo2')
+data.setCell(0, 3, 8801);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'launchSpeakLangII')
-data.setCell(1, 2, 'com.testng.demo.TestNGDemo2')
-data.setCell(1, 3, 7273);
+data.setCell(1, 1, 'launchSpeakLangI')
+data.setCell(1, 2, 'com.testng.demo.TestNGDemo')
+data.setCell(1, 3, 7654);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'launchRediffEmailII')
-data.setCell(2, 2, 'com.testng.demo.TestNGDemo2')
-data.setCell(2, 3, 6563);
+data.setCell(2, 1, 'launchRediffEmailI')
+data.setCell(2, 2, 'com.testng.demo.TestNGDemo')
+data.setCell(2, 3, 6643);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'launchRediffEmailI')
-data.setCell(3, 2, 'com.testng.demo.TestNGDemo')
-data.setCell(3, 3, 6174);
+data.setCell(3, 1, 'launchRediffEmailII')
+data.setCell(3, 2, 'com.testng.demo.TestNGDemo2')
+data.setCell(3, 3, 6603);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -280,55 +311,55 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.testng.demo.TestNGDemo</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
+                <span class="method-name">beforeMethod(Edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">launchRediffEmailI</span>
-                <span class="method-start">3808 ms</span>
+                <span class="method-start">5986 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">9993 ms</span>
+                <span class="method-start">12645 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">10826 ms</span>
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">13727 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">launchSpeakLangI</span>
-                <span class="method-start">12678 ms</span>
+                <span class="method-start">17397 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">20662 ms</span>
+                <span class="method-start">25053 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testng.demo.TestNGDemo2</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">21622 ms</span>
+                <span class="method-start">26053 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">launchRediffEmailII</span>
-                <span class="method-start">23503 ms</span>
+                <span class="method-start">29573 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">30069 ms</span>
+                <span class="method-start">36182 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">31056 ms</span>
+                <span class="method-start">37190 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">launchSpeakLangII</span>
-                <span class="method-start">32840 ms</span>
+                <span class="method-start">40822 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">40114 ms</span>
+                <span class="method-start">49623 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

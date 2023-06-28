@@ -14,7 +14,7 @@ public class TestNGDemo2 {
 
 	WebDriver driver = null;
 
-	@BeforeMethod
+	@BeforeMethod  (alwaysRun = true)
 	public void beforeMethod() {
 		// to get rootPath
 		String rootPath = System.getProperty("user.dir");
@@ -31,19 +31,19 @@ public class TestNGDemo2 {
 		System.out.println("browser opened and app is launched befre running TC");
 	}
 
-	@Test
+	@Test (groups = {"Regression"} )
 	public void launchSpeakLangII() throws InterruptedException {
 		driver.get("https://speaklanguages.com/");
 		Thread.sleep(5000);
 	}
 
-	@Test
+	@Test (groups = {"Regression"} )
 	public void launchRediffEmailII() throws InterruptedException {
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		Thread.sleep(5000);
 	}
 
-	@AfterMethod
+	@AfterMethod  (alwaysRun = true)
 	public void afterMethod() {
 		driver.quit();
 		System.out.println("browser closed and app also closed after running TC");
