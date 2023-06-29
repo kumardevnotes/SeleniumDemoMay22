@@ -6,13 +6,12 @@
 		<groups>
 			<run>
 				<include name="Smoke" />
-				<include name="Regression" />
 			</run>
 		</groups>
 
 		<classes>
 			<class name="com.testng.demo.TestNGDemo" />
-			<class name="com.testng.demo.TestNGDemo2" />
+			
 		</classes>
 	</test>
 </suite>

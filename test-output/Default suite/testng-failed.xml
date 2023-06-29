@@ -6,8 +6,9 @@
       <class name="com.testng.demo.TestNGDemo">
         <methods>
           <include name="afterMethod"/>
-          <include name="launchSpeakLang"/>
           <include name="beforeMethod"/>
+          <include name="launchRediffEmailI"/>
+          <include name="launchSpeakLangI"/>
         </methods>
       </class> <!-- com.testng.demo.TestNGDemo -->
     </classes>

@@ -48,13 +48,13 @@ public class TestNGDemo {
 		System.out.println("browser opened and app is launched befre running TC");
 	}
 
-	@Test(groups = {"Smoke"} )
+	@Test(groups = {"Smoke"}, priority =1, enabled = false)
 	public void launchSpeakLangI() throws InterruptedException {
 		driver.get("https://speaklanguages.com/");
 		Thread.sleep(5000);
 	}
 
-	@Test (groups = {"Smoke"} )
+	@Test (groups = {"Smoke"}, priority =2 )
 	public void launchRediffEmailI() throws InterruptedException {
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		Thread.sleep(5000);

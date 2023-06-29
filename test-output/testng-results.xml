@@ -1,85 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-28T20:13:21 IST" name="Suite1" finished-at="2023-06-28T20:14:11 IST" duration-ms="50617">
+  <suite started-at="2023-06-29T20:35:33 IST" name="Default suite" finished-at="2023-06-29T20:35:56 IST" duration-ms="23471">
     <groups>
-      <group name="Regression">
-        <method signature="TestNGDemo2.launchRediffEmailII()[pri:0, instance:com.testng.demo.TestNGDemo2@36916eb0]" name="launchRediffEmailII" class="com.testng.demo.TestNGDemo2"/>
-        <method signature="TestNGDemo2.launchSpeakLangII()[pri:0, instance:com.testng.demo.TestNGDemo2@36916eb0]" name="launchSpeakLangII" class="com.testng.demo.TestNGDemo2"/>
-      </group> <!-- Regression -->
-      <group name="Smoke">
-        <method signature="TestNGDemo.launchRediffEmailI()[pri:0, instance:com.testng.demo.TestNGDemo@2f217633]" name="launchRediffEmailI" class="com.testng.demo.TestNGDemo"/>
-        <method signature="TestNGDemo.launchSpeakLangI()[pri:0, instance:com.testng.demo.TestNGDemo@2f217633]" name="launchSpeakLangI" class="com.testng.demo.TestNGDemo"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-06-28T20:13:21 IST" name="Regression1" finished-at="2023-06-28T20:14:11 IST" duration-ms="50617">
-      <class name="com.testng.demo.TestNGDemo2">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.demo.TestNGDemo2@36916eb0]" started-at="2023-06-28T20:13:47 IST" name="beforeMethod" finished-at="2023-06-28T20:13:50 IST" duration-ms="3520" status="PASS">
+    <test started-at="2023-06-29T20:35:33 IST" name="Default test" finished-at="2023-06-29T20:35:56 IST" duration-ms="23471">
+      <class name="com.selenium.demo.SeleniumLocatorsDemo">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.selenium.demo.SeleniumLocatorsDemo@20ccf40b]" started-at="2023-06-29T20:35:33 IST" name="beforeMethod" finished-at="2023-06-29T20:35:37 IST" duration-ms="4092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="launchRediffEmailII()[pri:0, instance:com.testng.demo.TestNGDemo2@36916eb0]" started-at="2023-06-28T20:13:50 IST" name="launchRediffEmailII" finished-at="2023-06-28T20:13:57 IST" duration-ms="6603" status="PASS">
+        <test-method signature="locatorsDemo()[pri:0, instance:com.selenium.demo.SeleniumLocatorsDemo@20ccf40b]" started-at="2023-06-29T20:35:37 IST" name="locatorsDemo" finished-at="2023-06-29T20:35:55 IST" duration-ms="18214" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchRediffEmailII -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.demo.TestNGDemo2@36916eb0]" started-at="2023-06-28T20:13:57 IST" name="afterMethod" finished-at="2023-06-28T20:13:58 IST" duration-ms="1007" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.demo.TestNGDemo2@36916eb0]" started-at="2023-06-28T20:13:58 IST" name="beforeMethod" finished-at="2023-06-28T20:14:02 IST" duration-ms="3632" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="launchSpeakLangII()[pri:0, instance:com.testng.demo.TestNGDemo2@36916eb0]" started-at="2023-06-28T20:14:02 IST" name="launchSpeakLangII" finished-at="2023-06-28T20:14:11 IST" duration-ms="8801" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchSpeakLangII -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.demo.TestNGDemo2@36916eb0]" started-at="2023-06-28T20:14:11 IST" name="afterMethod" finished-at="2023-06-28T20:14:11 IST" duration-ms="938" status="PASS">
+        </test-method> <!-- locatorsDemo -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.selenium.demo.SeleniumLocatorsDemo@20ccf40b]" started-at="2023-06-29T20:35:55 IST" name="afterMethod" finished-at="2023-06-29T20:35:56 IST" duration-ms="1108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.testng.demo.TestNGDemo2 -->
-      <class name="com.testng.demo.TestNGDemo">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.testng.demo.TestNGDemo@2f217633]" started-at="2023-06-28T20:13:21 IST" name="beforeMethod" finished-at="2023-06-28T20:13:27 IST" duration-ms="5986" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="launchRediffEmailI()[pri:0, instance:com.testng.demo.TestNGDemo@2f217633]" started-at="2023-06-28T20:13:27 IST" name="launchRediffEmailI" finished-at="2023-06-28T20:13:34 IST" duration-ms="6643" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchRediffEmailI -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.demo.TestNGDemo@2f217633]" started-at="2023-06-28T20:13:34 IST" name="afterMethod" finished-at="2023-06-28T20:13:35 IST" duration-ms="1081" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.testng.demo.TestNGDemo@2f217633]" started-at="2023-06-28T20:13:35 IST" name="beforeMethod" finished-at="2023-06-28T20:13:38 IST" duration-ms="3669" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="launchSpeakLangI()[pri:0, instance:com.testng.demo.TestNGDemo@2f217633]" started-at="2023-06-28T20:13:38 IST" name="launchSpeakLangI" finished-at="2023-06-28T20:13:46 IST" duration-ms="7654" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchSpeakLangI -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.demo.TestNGDemo@2f217633]" started-at="2023-06-28T20:13:46 IST" name="afterMethod" finished-at="2023-06-28T20:13:47 IST" duration-ms="997" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.testng.demo.TestNGDemo -->
-    </test> <!-- Regression1 -->
-  </suite> <!-- Suite1 -->
+      </class> <!-- com.selenium.demo.SeleniumLocatorsDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
