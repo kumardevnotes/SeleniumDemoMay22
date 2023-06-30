@@ -10,14 +10,26 @@ Selenium Architecture diagram: https://www.softwaretestingmaterial.com/wp-conten
 
 DOM - document  object locator or HTML window
 
-Selenium Locators:
+HTML tag names:
 
-id
-name
-className
-linkText
-partialLinkText
-tagName
+html --> tag (HyperTextMarkupLanguage)
+body -->
+div -  division
+p - paragraph
+a - anchor
+li - list
+ul - unordered list
+span - 
+img - image 
+
+	:: Selenium Locators ::
+	
+	id
+	name
+	className
+	linkText
+	partialLinkText
+	tagName
 
 xPath
 CSSSelector --
