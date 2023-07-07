@@ -3,7 +3,7 @@ public class TestDemo {
 
 	public static void main(String[] args) {
 
-		int givenNumbers[] = { 22, 12, 65, 47, 999 };
+		int givenNumbers[] = { 22, 12, 65, 47, 999, 2, 1001 };
 
 		System.out.println(getNumber(givenNumbers));
 	}

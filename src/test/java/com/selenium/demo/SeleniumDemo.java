@@ -33,7 +33,7 @@ public class SeleniumDemo {
 
 		//to maximize browser
 		driver.manage().window().maximize();
-		Thread.sleep(1000); // 3000ms = 3s
+		Thread.sleep(3000); // 3000ms = 3s
 
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		Thread.sleep(2000);
