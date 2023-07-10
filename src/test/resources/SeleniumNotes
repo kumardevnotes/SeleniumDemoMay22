@@ -52,6 +52,19 @@ xPath -->  Absolute xpath which starts with /and thi is not recommended
            //li[@id='nav_signup']/a  --> Parent to child
            //a[.='Sign up']/..  --> Child to its parent
            
+              *****************************
+           //h1[.='About Speak Languages']/parent::div      ---> Child to parent
+             //a[.='Sign up']/..                            ---> Child to its parent
+         
+           //h1[.='About Speak Languages']/ancestor::div[@id='wrapper']     --> Child to its ancestor
+           
+           //div[@id='community']//li//text() --> To locate an element which is just a text and does not have any tagName
+           
+           //li[@id='nav_signup']/a     --> Parent to child
+           //li[@id='nav_login']/a      --> Parent to child
+           
+           *****************************
+           
            (//p[@class='site_link']/a)[2] --> Index based. Trying to locate second element out of all matchings
            
            (//p[@class='site_link']/a)[1]    --> to locate first matching element 
