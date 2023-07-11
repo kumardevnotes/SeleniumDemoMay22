@@ -34,7 +34,7 @@ img - image
 xPath
 CSSSelector --
 
-xPath -->  Absolute xpath which starts with /and thi is not recommended
+xPath -->  Absolute xpath which starts with /and this is not recommended
            /html/body/div[1]/div[1]/div[4]/ul/li[2]/a
            
             

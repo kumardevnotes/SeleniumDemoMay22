@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.demo.SeleniumLocatorsDemo2">
+      <class name="com.testng.demo.SeleniumMethodsDemo1">
         <methods>
           <include name="beforeMethod"/>
-          <include name="locatorsDemo"/>
           <include name="afterMethod"/>
+          <include name="launchApp"/>
         </methods>
-      </class> <!-- com.selenium.demo.SeleniumLocatorsDemo2 -->
+      </class> <!-- com.testng.demo.SeleniumMethodsDemo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
