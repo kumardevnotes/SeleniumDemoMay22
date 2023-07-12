@@ -94,13 +94,19 @@ quit() --> It will close all opned windows
 Dimension dimension = new Dimension(1920, 1080);
 setSize(dimension) --> This method will resie the window depending on the dimensions passed
 
+
+clear()-->we clear the text in text field
 sendKeys(String value) --> This method is used to pass the string value into a text field
 click() --> Used to click on a given element
 
+isDisplayed()
+isEnabled()
+isSelected()
+
 getText() --> This method is sued to get the text on the screen or web page
-getTitle() --> To get the title of the web page
 getAttribute() 	--> This method is used to get the attribute val 
-getPageUrl() ---> This method gives the page Url
+getTitle() --> To get the title of the web page
+getCurrentUrl() ---> This method gives the page Url
 
 JavascriptExecutor - Used this in ScrollToElement example
 
