@@ -11,15 +11,7 @@ import org.openqa.selenium.WindowType;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterMethod;
-
-/*
- * 1. Launch browser
- * 2. Launch App https://www.speaklanguages.com/
- * 3. Click on Log in link
- * 4. Verify that user is able to select "Keep me logged in" Checkbox, if it is not selected
- * */	
-
-public class SeleniumMethodsDemo3 {
+public class SeleniumMethodsDemo4 {
 
 	WebDriver driver = null;
 
@@ -29,6 +21,9 @@ public class SeleniumMethodsDemo3 {
 		System.setProperty("webdriver.edge.driver", rootPath + "//src//test//resources//msedgedriver.exe");
 		EdgeOptions edgeOptions = new EdgeOptions();
 		edgeOptions.addArguments("--remote-allow-origins=*");
+		
+		//To disable browser popups
+		edgeOptions.addArguments("--disable-notifications");
 		driver = new EdgeDriver(edgeOptions);
 		
 		//To maximize browser, use below code
@@ -42,31 +37,24 @@ public class SeleniumMethodsDemo3 {
 		//To launch the app in the browser which is opened in above beforeMethod(), we use below get()
 		driver.get("https://speaklanguages.com/");
 		
-		driver.findElement(By.linkText("Log in")).click();
-		Thread.sleep(2000);
 		
-		boolean isSelected  = driver.findElement(By.id("keep_logged_in_input")).isSelected();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
-		if(isSelected) { //true
-			System.out.println("Keep me logged in is selected already");
-		}
-		else {
-			System.out.println("Keep me logged in not selected");
-			driver.findElement(By.id("keep_logged_in_input")).click();
-		}
-		
-		String myPageTitle = driver.getTitle();
-		String myPageUrl = driver.getCurrentUrl();
-		String myPageSource =driver.getPageSource();
-		
-		WebElement checkBoxElement  = driver.findElement(By.id("keep_logged_in_input"));
-		
-		System.out.println(checkBoxElement.getTagName()); //input
-		System.out.println(checkBoxElement.getAttribute("type")); //checkbox
-		System.out.println(checkBoxElement.getAttribute("name")); //keep_logged_in
+		//Scrldown by 350p
+		js.executeScript("window.scrollBy(0,350)", "");
 		
 		
-		Thread.sleep(2000);
+		Thread.sleep(6000);
+	
+      //scroll up by 350p
+		js.executeScript("window.scrollBy(0,0)", "");
+		
+		
+		//Scroll to vew the element
+		WebElement privacyPolicyElement = driver.findElement(By.linkText("Privacy policy"));
+		js.executeScript("arguments[0].scrollIntoView();", privacyPolicyElement);
+		
+		
 	
 	}
 
