@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-13T20:35:00 IST" name="Default suite" finished-at="2023-07-13T20:35:53 IST" duration-ms="53437">
+  <suite started-at="2023-07-13T22:21:34 IST" name="Default suite" finished-at="2023-07-13T22:21:40 IST" duration-ms="5967">
     <groups>
     </groups>
-    <test started-at="2023-07-13T20:35:00 IST" name="Default test" finished-at="2023-07-13T20:35:53 IST" duration-ms="53437">
+    <test started-at="2023-07-13T22:21:34 IST" name="Default test" finished-at="2023-07-13T22:21:40 IST" duration-ms="5967">
       <class name="com.testng.demo.SeleniumMethodsDemo4">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo4@2fb3536e]" started-at="2023-07-13T20:35:00 IST" name="beforeMethod" finished-at="2023-07-13T20:35:03 IST" duration-ms="3603" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo4@2c35e847]" started-at="2023-07-13T22:21:34 IST" name="beforeMethod" finished-at="2023-07-13T22:21:37 IST" duration-ms="2867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="launchApp()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo4@2fb3536e]" started-at="2023-07-13T20:35:03 IST" name="launchApp" finished-at="2023-07-13T20:35:52 IST" duration-ms="48768" status="PASS">
+        <test-method signature="launchApp()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo4@2c35e847]" started-at="2023-07-13T22:21:37 IST" name="launchApp" finished-at="2023-07-13T22:21:39 IST" duration-ms="2267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo4@2fb3536e]" started-at="2023-07-13T20:35:52 IST" name="afterMethod" finished-at="2023-07-13T20:35:53 IST" duration-ms="997" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo4@2c35e847]" started-at="2023-07-13T22:21:39 IST" name="afterMethod" finished-at="2023-07-13T22:21:40 IST" duration-ms="797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

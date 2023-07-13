@@ -78,9 +78,9 @@ xPath -->  Absolute xpath which starts with /and this is not recommended
 
 Issues:
 
-Run script in Chrome - Mac machine
-Scroll up  - not working
-WebElement details not coming on the script
+1. Run script in Chrome - Mac machine
+2. Scroll up  - not working
+3. WebElement details not coming on the script
 
 
     ::Selenium methods::
