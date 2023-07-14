@@ -67,19 +67,22 @@ public class SeleniumMethodsDemo4 {
 		js.executeScript("window.scrollBy(0,350)", "");
 		
 		
-		//Thread.sleep(6000);
+		Thread.sleep(6000);
 	
        //scroll up by 350p. Change 350 to -350. It will scroll the page to up
 		js.executeScript("window.scrollBy(0,-350)", "");
 		
-		//Thread.sleep(6000);
+		Thread.sleep(6000);
 		
 		
 		//Scroll to vew the element
 		WebElement privacyPolicyElement = driver.findElement(By.linkText("Privacy policy"));
 		
 		//To get the HTML source of a WebElement using Selenium script
-		System.out.println((String)((JavascriptExecutor)driver).executeScript("return arguments[0].outerHTML;", privacyPolicyElement));
+		
+		String HTMLCode  = (String)js.executeScript("return arguments[0].outerHTML;", privacyPolicyElement);
+		
+		System.out.println(HTMLCode);
 		
 		js.executeScript("arguments[0].scrollIntoView();", privacyPolicyElement);
 		
