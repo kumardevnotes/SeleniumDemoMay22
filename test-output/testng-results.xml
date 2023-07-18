@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-17T20:30:11 IST" name="Default suite" finished-at="2023-07-17T20:30:36 IST" duration-ms="24464">
+  <suite started-at="2023-07-18T20:09:33 IST" name="Default suite" finished-at="2023-07-18T20:10:03 IST" duration-ms="29767">
     <groups>
     </groups>
-    <test started-at="2023-07-17T20:30:11 IST" name="Default test" finished-at="2023-07-17T20:30:36 IST" duration-ms="24464">
-      <class name="com.testng.demo.SeleniumMethodsDemo8">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo8@52af26ee]" started-at="2023-07-17T20:30:11 IST" name="beforeMethod" finished-at="2023-07-17T20:30:14 IST" duration-ms="3120" status="PASS">
+    <test started-at="2023-07-18T20:09:33 IST" name="Default test" finished-at="2023-07-18T20:10:03 IST" duration-ms="29767">
+      <class name="com.testng.demo.SeleniumMethodsDemo9">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo9@2c35e847]" started-at="2023-07-18T20:09:33 IST" name="beforeMethod" finished-at="2023-07-18T20:09:36 IST" duration-ms="3043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="launchAppinTabs()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo8@52af26ee]" started-at="2023-07-17T20:30:14 IST" name="launchAppinTabs" finished-at="2023-07-17T20:30:34 IST" duration-ms="19875" status="PASS">
+        <test-method signature="signUpintoApp()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo9@2c35e847]" started-at="2023-07-18T20:09:36 IST" name="signUpintoApp" finished-at="2023-07-18T20:10:02 IST" duration-ms="25788" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchAppinTabs -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo8@52af26ee]" started-at="2023-07-17T20:30:34 IST" name="afterMethod" finished-at="2023-07-17T20:30:36 IST" duration-ms="1410" status="PASS">
+        </test-method> <!-- signUpintoApp -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.demo.SeleniumMethodsDemo9@2c35e847]" started-at="2023-07-18T20:10:02 IST" name="afterMethod" finished-at="2023-07-18T20:10:03 IST" duration-ms="900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.testng.demo.SeleniumMethodsDemo8 -->
+      </class> <!-- com.testng.demo.SeleniumMethodsDemo9 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
